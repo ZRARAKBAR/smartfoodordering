@@ -9,7 +9,6 @@ import java.util.List;
 
 public class MenuItemDAO {
 
-    // Get All Menu Items
     public List<MenuItem> getAllMenuItems() {
         List<MenuItem> menuItems = new ArrayList<>();
         String query = "SELECT * FROM menu_items order by price desc";
@@ -57,7 +56,6 @@ public class MenuItemDAO {
         return false;
     }
 
-    // Update Menu Item
     public boolean updateMenuItem(MenuItem item) {
         String query = "UPDATE menu_items SET name=?, category_id=?, price=?, image_path=? WHERE id=?";
 
@@ -80,7 +78,6 @@ public class MenuItemDAO {
         return false;
     }
 
-    // Delete Menu Item by ID
     public boolean deleteMenuItem(int itemId) {
         String query = "DELETE FROM menu_items WHERE id=?";
 

@@ -29,10 +29,10 @@ public class MenuForm extends JFrame {
         JScrollPane scrollPane = new JScrollPane(this.mainPanel);
         scrollPane.getVerticalScrollBar().setUnitIncrement(20);
 
-        JButton cartButton = createStyledButton("🛒 View Cart");
+        JButton cartButton = createStyledButton(" View Cart");
         cartButton.addActionListener(e -> showCart());
 
-        JButton backButton = createStyledButton("⬅ Back");
+        JButton backButton = createStyledButton(" Back");
         backButton.addActionListener(e -> {
             dispose();
             foodordering.MainLauncher.main(null);

@@ -23,9 +23,19 @@ public class MainLauncher {
         JLabel gifLabel = new JLabel(gifIcon);
         gifLabel.setBounds(150, 100, 400, 350);
 
-        JLabel title = new JLabel(" Order Management System  ", SwingConstants.CENTER);
+        JLabel title = new JLabel(" Kitchen Link  |  by Zrar Akbar ", SwingConstants.CENTER);
+
         title.setFont(new Font("Segoe UI", Font.BOLD, 20));
-        title.setForeground(new Color(33, 33, 33));
+
+        title.setForeground(Color.WHITE);
+
+        title.setOpaque(true);
+        title.setBackground(new Color(58, 45, 38)); 
+
+        title.setBorder(BorderFactory.createCompoundBorder(
+                BorderFactory.createLineBorder(new Color(200, 180, 160), 2, true), 
+                BorderFactory.createEmptyBorder(5, 10, 5, 10)));
+
         title.setBounds(150, 460, 400, 30);
 
         JLabel loading = new JLabel("", SwingConstants.CENTER);

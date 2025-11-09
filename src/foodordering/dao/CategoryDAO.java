@@ -14,7 +14,7 @@ public class CategoryDAO {
         try {
             Connection conn = DBConnection.getConnection();
             Statement stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM categories");
+            ResultSet rs = stmt.executeQuery("SELECT id,name FROM categories ORDER BY id ASC");
             while (rs.next()) {
                 Category category = new Category();
                 category.setId(rs.getInt("id"));
@@ -29,16 +29,17 @@ public class CategoryDAO {
 
 
     public boolean addCategory(String name) {
-        try (Connection conn = DBConnection.getConnection()) {
-            String sql = "INSERT INTO category1(name) VALUES (?)";
-            PreparedStatement stmt = conn.prepareStatement(sql);
-            stmt.setString(1, name);
-            return stmt.executeUpdate() > 0;
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return false;
-        }
+    try (Connection conn = DBConnection.getConnection()) {
+        String sql = "INSERT INTO categories(name) VALUES (?)"; 
+        PreparedStatement stmt = conn.prepareStatement(sql);
+        stmt.setString(1, name);
+        int rows = stmt.executeUpdate();
+        return rows > 0;
+    } catch (SQLException e) {
+        e.printStackTrace();
+        return false;
     }
+}
 
     public boolean updateCategory(int id, String newName) {
         try (Connection conn = DBConnection.getConnection()) {
