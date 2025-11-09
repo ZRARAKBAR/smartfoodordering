@@ -1,0 +1,9 @@
+Copyright (c) 2025 MUHAMMAD ZRAR AKBAR
+
+All Rights Reserved.
+
+This software, including source code, assets, and database scripts, is developed for educational  use only.
+
+No part of this project may be copied, distributed, modified, or used for commercial purposes without the express written permission of the author.
+
+Sharing this project on GitHub or other platforms is allowed for demonstration purposes only. Any unauthorized use, reproduction, or distribution is strictly prohibited.
