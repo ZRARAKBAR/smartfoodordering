@@ -25,6 +25,12 @@ This system allows customers to browse the menu, place orders, and track order s
 - MySQL (Database)
 - Object-Oriented Programming (OOP)
 - MVC design pattern for code organization
+  
+##  Project Demo
+ Watch the full project demo on **LinkedIn**:  
+[ View on LinkedIn]
+https://www.linkedin.com/posts/zrar-akbar-5656ba365_java-mysql-foodorderingsystem-ugcPost-7393301233094057984-_e_V
+
 ## Author
  Developed by Muhammad Zrar Akbar  
  Educational use only — commercial reuse or redistribution is prohibited.
